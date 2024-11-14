@@ -1,13 +1,32 @@
-In this repository, I make a simulation of the Newton Method for non-linear ecuations. Also, I compare it to the Bisection Method.
+# Método de Newton y Método de Bisección en Python
 
-To use it, just run the main.py file.
+Este repositorio contiene una implementación en Python de dos métodos numéricos para encontrar raíces de funciones no lineales:
 
-Also, if anyone seeing this wants to try it with a different function, just declare that function in the main.py file like this:
+- **Método de Bisección**
+- **Método de Newton**
 
-f_expr = {The correspondence rule of the function}
-def f_func(x):
-  return {The correspondence rule of the function on the variable x}
+El objetivo es mostrar cómo se pueden utilizar estos métodos para resolver ecuaciones de la forma \( f(x) = 0 \) y comparar su comportamiento.
 
-Please make sure to use the variable declared with x = sp.symbols('x') (In this case, 'x') on f_expr.
+## Descripción del Proyecto
 
-Adrian Gallo.
+En el archivo `main.py`, se resuelve la ecuación:
+
+\[
+f(x) = x^2 - 2
+\]
+
+usando ambos métodos. La raíz de esta ecuación corresponde a \( \sqrt{2} \).
+
+
+## Requisitos
+
+Antes de ejecutar el código, asegúrate de tener instalado **Python 3** y las siguientes bibliotecas:
+
+- `sympy`
+- `math`
+
+Puedes instalarlas utilizando `pip`:
+
+```bash
+pip install sympy
+
